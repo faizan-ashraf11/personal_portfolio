@@ -1,0 +1,12 @@
+<div class="flex flex-col w-full h-[100vh] p-4 gap-2.5 justify-between">
+  <span class="text-2xl border-b-4 border-[#007accc2] w-fit mx-auto">{{ data?.projectName }}</span>
+  <img [src]="imageAddress" alt="" class="w-full h-fit">
+  <div class="flex flex-row gap-4 w-fit ml-auto h-fit">
+    <span class="material-symbols-outlined text-white bg-[#007ACC] rounded px-1 md:text-base text-xs md:py-0 py-0.5 hover:cursor-pointer" (click)="previous()" >
+      arrow_back
+    </span>
+    <span class="material-symbols-outlined text-white bg-[#007ACC] rounded px-1 md:text-base text-xs md:py-0 py-0.5 hover:cursor-pointer" (click)="next()" >
+      arrow_forward
+    </span>
+  </div>
+</div>

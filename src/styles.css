@@ -102,3 +102,7 @@
 .muted{
   color: #696969;
 }
+
+.mat-mdc-dialog-container .mdc-dialog__surface{
+  background-color: white !important;
+}
