@@ -1,0 +1,25 @@
+<div class="flex flex-col gap-6">
+  <div class="flex flex-row gap-3 pb-20 sm:px-0 sm:justify-start sm:items-start justify-center items-center px-10 border-b-2 shadow-sm">
+    <app-animated-box class="sm:block hidden"></app-animated-box>
+    <div class="flex flex-col gap-3 sm:w-9/12 w-full">
+      <div class="2xl:text-6xl text-4xl h-fit sm:mt-28 mt-16 text-center sm:text-start">
+        Hi <span class="text-[#007accc2]">,</span> Below are portfolio projects
+      </div>
+      <div class="2xl:text-xl text-lg text-[#007accc2]  text-center sm:text-start">
+        Angular & Full-Stack Projects
+      </div>
+      <p class="md:w-7/12 w-full 2xl:text-base text-sm  text-center sm:text-start">{{paraText}}</p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-2 pt-5 pb-10 sm:px-20 xs:px-10 px-5">
+    <span class="2xl:text-3xl text-2xl border-b-4 border-[#007accc2] w-fit mx-auto sm:mx-0">Portfolio Projects</span>
+    <div class="flex flex-wrap gap-x-8 gap-y-16 px-3 pt-12 pb-3 w-full justify-center">
+      <app-portfolio-card [heading]="'UCP Odoo Portal'" [desrciption]="'Advance UI of Odoo portal with more Academic features through portal'" [imageUrl]="'../../../assets/odooPrimaryPic.png'" ></app-portfolio-card>
+      <app-portfolio-card [heading]="'UCP Odoo Portal'" [desrciption]="'Advance UI of Odoo portal with more Academic features through portal'" [imageUrl]="'../../../assets/odooPrimaryPic.png'" ></app-portfolio-card>
+      <app-portfolio-card [heading]="'UCP Odoo Portal'" [desrciption]="'Advance UI of Odoo portal with more Academic features through portal'" [imageUrl]="'../../../assets/odooPrimaryPic.png'" ></app-portfolio-card>
+      <app-portfolio-card [heading]="'UCP Odoo Portal'" [desrciption]="'Advance UI of Odoo portal with more Academic features through portal'" [imageUrl]="'../../../assets/odooPrimaryPic.png'"  ></app-portfolio-card>
+      <app-portfolio-card [heading]="'UCP Odoo Portal'" [desrciption]="'Advance UI of Odoo portal with more Academic features through portal'" [imageUrl]="'../../../assets/odooPrimaryPic.png'"  ></app-portfolio-card>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

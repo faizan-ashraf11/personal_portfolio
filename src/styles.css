@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-all{
+  box-shadow:
+  -5px -5px 10px rgba(0, 0, 0, 0.075),
+  5px -5px 10px rgba(0, 0, 0, 0.075),
+  -5px 5px 10px rgba(0, 0, 0, 0.075),
+  5px 5px 10px rgba(0, 0, 0, 0.075);
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #007ACC;
+  outline: 3px #007ACC solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 0.7em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover .text {
+  color: #007ACC;
+}
+
+.button:hover svg path {
+  fill: #007ACC;
+}
+
+
+.headerHover {
+  position: relative;
+  display: inline-block; /* Ensure the element can have width */
+}
+
+.headerHover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the height of the border as needed */
+  background-color: #007ACC;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.headerHover:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.headActive {
+  position: relative;
+  display: inline-block; /* Ensure the element can have width */
+}
+
+.headActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust the height of the border as needed */
+  background-color: #007ACC;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar { width: 7px; height: 7px !important; }
+::-webkit-scrollbar-track { background: #f1f1f1;}
+/* Handle */
+::-webkit-scrollbar-thumb {background: #007acc85;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #007ACC;
+}
+
+.muted{
+  color: #696969;
+}
