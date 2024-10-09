@@ -31,8 +31,13 @@ jobs:
 
       - name: Build the Angular project
         run: |
-          # Build the project with CSS files (not SCSS)
-          npm run build -- --output-path=dist --base-href=/personal-portfolio/
+          npm run build -- --output-path=dist/browser --base-href=/personal-portfolio/
+
+      - name: Move index.html to root
+        run: |
+          mv dist/browser/index.html dist/
+          mv dist/browser/* dist/
+          rm -r dist/browser
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
